@@ -1,0 +1,25 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-10-09 23:56 CEST
+Nmap scan report for UbuntuPcSalon (192.168.100.1)
+Host is up (0.00018s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE         SERVICE
+53/tcp open|filtered domain
+MAC Address: 52:54:00:22:5E:44 (QEMU virtual NIC)
+
+Nmap scan report for Windows8Labs.network_labs (192.168.100.162)
+Host is up (0.00085s latency).
+All 1000 scanned ports on Windows8Labs.network_labs (192.168.100.162) are in ignored states.
+Not shown: 1000 open|filtered tcp ports (no-response)
+MAC Address: 52:54:00:94:DF:99 (QEMU virtual NIC)
+
+Nmap scan report for kali-VM-UbuntuPC.network_labs (192.168.100.134)
+Host is up (0.0000040s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE         SERVICE
+3000/tcp open|filtered ppp
+5001/tcp open|filtered commplex-link
+8081/tcp open|filtered blackice-icecap
+8082/tcp open|filtered blackice-alerts
+9200/tcp open|filtered wap-wsp
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 7.43 seconds

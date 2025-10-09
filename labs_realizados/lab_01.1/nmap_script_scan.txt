@@ -1,0 +1,33 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-10-10 00:36 CEST
+Nmap scan report for Windows8Labs.network_labs (192.168.100.162)
+Host is up (0.00057s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 52:54:00:94:DF:99 (QEMU virtual NIC)
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows 8.1 Pro 9600 (Windows 8.1 Pro 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_8.1::-
+|   Computer name: Windows8Labs
+|   NetBIOS computer name: WINDOWS8LABS\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2025-10-10T00:36:44+02:00
+| smb-enum-shares: 
+|   note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)
+|   account_used: <blank>
+|   \\192.168.100.162\ADMIN$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\192.168.100.162\C$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\192.168.100.162\IPC$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: READ
+|   \\192.168.100.162\USERS: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|_    Anonymous access: READ
+
+Nmap done: 1 IP address (1 host up) scanned in 1.20 seconds
