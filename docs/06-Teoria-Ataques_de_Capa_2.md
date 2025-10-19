@@ -65,3 +65,20 @@ Las ACLs son reglas que permiten o deniegan tráfico en un router o switch. Aunq
 *   **Ataque: Fragmentación de Paquetes**
     *   **Descripción:** Algunas ACLs simples solo inspeccionan el primer fragmento de un paquete IP. Un atacante puede dividir un paquete malicioso en múltiples fragmentos, poniendo la información inofensiva en el primero (que pasa la ACL) y la carga maliciosa en los fragmentos posteriores (que no son inspeccionados).
     *   **Mitigación:** Usar ACLs más avanzadas o firewalls de estado (stateful firewalls) que reensamblan los paquetes antes de inspeccionarlos.
+
+---
+
+## 7. Ataques a DHCP (Dynamic Host Configuration Protocol)
+
+DHCP automatiza la asignación de IPs en una red. Al ser un protocolo basado en broadcast y sin autenticación por defecto, es vulnerable a varios ataques.
+
+*   **Ataque: Inanición de DHCP (DHCP Starvation)**
+    *   **Descripción:** El atacante utiliza una herramienta (como `yersinia` o `dhcpig`) para enviar miles de peticiones DHCP DISCOVER a la red, cada una con una dirección MAC de origen falsa. El servidor DHCP responde a cada una con una oferta de IP (DHCP OFFER) y reserva esa IP en su pool de direcciones.
+    *   **Efecto:** El atacante agota por completo el pool de direcciones IP disponibles en el servidor DHCP. Como resultado, los clientes legítimos que se conecten a la red no podrán obtener una dirección IP, sufriendo una denegación de servicio.
+    *   **Sinergia:** Este ataque suele ser el paso previo para un ataque de servidor DHCP no autorizado.
+
+*   **Ataque: Servidor DHCP No Autorizado (Rogue DHCP Server)**
+    *   **Descripción:** Después de realizar un ataque de inanición para dejar fuera de servicio al servidor legítimo, el atacante levanta su propio servidor DHCP en la red.
+    *   **Efecto:** Los nuevos clientes que se conecten enviarán una petición DHCP DISCOVER, y el servidor del atacante responderá. El atacante puede entonces asignar a las víctimas una configuración de red maliciosa: una puerta de enlace y un servidor DNS que apunten a la máquina del atacante. Esto le permite realizar un ataque Man-in-the-Middle a gran escala y de forma pasiva, interceptando todo el tráfico de las víctimas.
+
+*   **Mitigación (Cisco):** **DHCP Snooping**. Esta es la defensa principal. Es una característica de seguridad de los switches que clasifica los puertos en "confiables" (donde está conectado el servidor DHCP legítimo) y "no confiables" (todos los demás). El switch solo permitirá los mensajes de DHCP OFFER provenientes de los puertos confiables, bloqueando así los servidores no autorizados. Además, DHCP Snooping construye una base de datos de bindings (IP, MAC, puerto) que es utilizada por otras defensas como Dynamic ARP Inspection (DAI).
