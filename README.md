@@ -14,18 +14,18 @@ A continuación se muestra la estructura de temas y laboratorios disponibles en 
 
 | # | Tema | Apuntes Teóricos | Laboratorio Práctico |
 |:-:|:---|:---:|:---:|
-| 0 | **Montaje del Laboratorio de AD** | [Ver Guía](./docs/00-Guia-Montaje_Lab_AD.md) | *(Guía de configuración)* |
-| 1 | **Resolución de Nombres y SMB** | [Ver Teoría](./docs/01-Teoria-Nombres_y_SMB.md) | [Ver Laboratorio](./docs/01.1-Lab-Enumeracion_SMB.md) |
-| 2 | **Envenenamiento de Caché DNS** | [Ver Teoría](./docs/02-Teoria-Envenenamiento_DNS.md) | [Ver Laboratorio](./docs/02.1-Lab-Envenenamiento_DNS.md) |
-| 3 | **Enumeración de SMTP y SNMP** | [Ver Teoría](./docs/03-Teoria-SMTP_y_SNMP.md) | [Ver Laboratorio](./docs/03.2-Lab-Enumeracion_SMTP_SNMP.md) |
-| 4 | **Explotación de FTP** | [Ver Teoría](./docs/04-Teoria-FTP.md) | [Ver Laboratorio](./docs/04.1-Lab-Explotacion_FTP.md) |
-| 5 | **Ataques Pass-the-Hash** | [Ver Teoría](./docs/05-Teoria-Pass_The_Hash.md) | [Ver Laboratorio](./docs/05.1-Lab-Pass_The_Hash.md) |
-| 6 | **Ataques de Capa 2** | [Ver Teoría](./docs/06-Teoria-Ataques_de_Capa_2.md) | [Ver Laboratorio](./docs/06.1-Lab-SSL_Stripping.md) |
-| 7 | **Ataques de Capa 3 (Enrutamiento)** | [Ver Teoría](./docs/07-Teoria-Ataques_de_Capa_3_Enrutamiento.md) | *(Conceptual)* |
-| 8 | **Ataques a Kerberos (Kerberoasting)** | [Ver Teoría](./docs/08-Teoria-Ataques_Kerberos_y_LDAP.md) | [Ver Laboratorio](./docs/08.1-Lab-Kerberoasting.md) |
-| 9 | **Ataques Criptográficos** | [Ver Teoría](./docs/09-Teoria-Ataques_Criptograficos_y_de_Degradacion.md) | *(Conceptual)* |
-| 10 | **Ataques DoS y DDoS** | [Ver Teoría](./docs/10-Teoria-Ataques_DoS_y_DDoS.md) | [Ver Laboratorio](./docs/10.1-Lab-Ataques_DoS.md) |
-| 11 | **Omisión de NAC** | [Ver Teoría](./docs/11-Teoria-Omision_de_NAC.md) | [Ver Laboratorio](./docs/11.1-Lab-Omision_de_NAC.md) |
+| 0 | **Montaje del Laboratorio de AD** | [Ver Guía](./1-Redes_Cableadas/00-Guia-Montaje_Lab_AD.md) | *(Guía de configuración)* |
+| 1 | **Resolución de Nombres y SMB** | [Ver Teoría](./1-Redes_Cableadas/01-Teoria-Nombres_y_SMB.md) | [Ver Laboratorio](./1-Redes_Cableadas/01.1-Lab-Enumeracion_SMB.md) |
+| 2 | **Envenenamiento de Caché DNS** | [Ver Teoría](./1-Redes_Cableadas/02-Teoria-Envenenamiento_DNS.md) | [Ver Laboratorio](./1-Redes_Cableadas/02.1-Lab-Envenenamiento_DNS.md) |
+| 3 | **Enumeración de SMTP y SNMP** | [Ver Teoría](./1-Redes_Cableadas/03-Teoria-SMTP_y_SNMP.md) | [Ver Laboratorio](./1-Redes_Cableadas/03.2-Lab-Enumeracion_SMTP_SNMP.md) |
+| 4 | **Explotación de FTP** | [Ver Teoría](./1-Redes_Cableadas/04-Teoria-FTP.md) | [Ver Laboratorio](./1-Redes_Cableadas/04.1-Lab-Explotacion_FTP.md) |
+| 5 | **Ataques Pass-the-Hash** | [Ver Teoría](./1-Redes_Cableadas/05-Teoria-Pass_The_Hash.md) | [Ver Laboratorio](./1-Redes_Cableadas/05.1-Lab-Pass_The_Hash.md) |
+| 6 | **Ataques de Capa 2** | [Ver Teoría](./1-Redes_Cableadas/06-Teoria-Ataques_de_Capa_2.md) | [Ver Laboratorio](./1-Redes_Cableadas/06.1-Lab-SSL_Stripping.md) |
+| 7 | **Ataques de Capa 3 (Enrutamiento)** | [Ver Teoría](./1-Redes_Cableadas/07-Teoria-Ataques_de_Capa_3_Enrutamiento.md) | *(Conceptual)* |
+| 8 | **Ataques a Kerberos (Kerberoasting)** | [Ver Teoría](./1-Redes_Cableadas/08-Teoria-Ataques_Kerberos_y_LDAP.md) | [Ver Laboratorio](./1-Redes_Cableadas/08.1-Lab-Kerberoasting.md) |
+| 9 | **Ataques Criptográficos** | [Ver Teoría](./1-Redes_Cableadas/09-Teoria-Ataques_Criptograficos_y_de_Degradacion.md) | *(Conceptual)* |
+| 10 | **Ataques DoS y DDoS** | [Ver Teoría](./1-Redes_Cableadas/10-Teoria-Ataques_DoS_y_DDoS.md) | [Ver Laboratorio](./1-Redes_Cableadas/10.1-Lab-Ataques_DoS.md) |
+| 11 | **Omisión de NAC** | [Ver Teoría](./1-Redes_Cableadas/11-Teoria-Omision_de_NAC.md) | [Ver Laboratorio](./1-Redes_Cableadas/11.1-Lab-Omision_de_NAC.md) |
 
 
 ## 🚀 ¿Cómo usar este repositorio?
