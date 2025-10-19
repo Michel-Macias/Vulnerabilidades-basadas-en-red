@@ -1,0 +1,24 @@
+# Archivos específicos de Sistemas Operativos
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de editores y IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de logs y temporales
+*.log
+*.tmp
+
+# Directorios de dependencias (si los hubiera en el futuro)
+node_modules/
+venv/
+
+# Archivos de contexto de Gemini (para no subirlos al repo)
+GEMINI.md
+.gemini-context.json
+
+# Carpetas temporales de borradores
+/Docs_Cisco/
